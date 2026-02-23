@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "cv:yaml": "node scripts/yaml-to-js.js",
+    "dev": "npm run cv:yaml && vite",
     "compile-main-types": "tsc ./scripts/main-types.ts",
-    "build": "vite build",
+    "build": "npm run cv:yaml && vite build",
     "main": "node ./scripts/main.js",
     "lint": "eslint .",
-    "typecheck" : "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "preview": "vite preview",
-    "test" : "vitest --run", 
+    "test": "vitest --run",
     "runjs": "node lessons/examples/javascript-features.js"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.2.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
@@ -33,6 +35,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "js-yaml": "^4.1.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0",
     "vite": "^7.2.2",
