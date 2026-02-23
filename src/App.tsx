@@ -14,8 +14,7 @@ export function App() {
         "bg-amber-300 transition-all duration-300  h-screen w-screen text-black text-center"
       }
     >
-      <BrowserRouter>
-        <AppHeader></AppHeader>
+      <BrowserRouter> 
         <AppRouter />
       </BrowserRouter>
     </div>
