@@ -1,5 +1,5 @@
 # Todo
-1. add github pages deployment
-2. add a better style to the app
-3. yaml support for the cv data
-4. add tests
+1. add a better style to the app
+2. yaml support for the cv data
+3. add tests
+4. [DONE] add github pages deployment

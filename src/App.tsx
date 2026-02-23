@@ -14,7 +14,7 @@ export function App() {
         "bg-amber-300 transition-all duration-300  h-screen w-screen text-black text-center"
       }
     >
-      <BrowserRouter> 
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <AppRouter />
       </BrowserRouter>
     </div>
