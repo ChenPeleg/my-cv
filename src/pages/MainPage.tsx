@@ -6,7 +6,7 @@ export const MainPage = () => {
 
   return (
     <div className="max-w-[1100px] mx-auto my-5 bg-[#f8fafc] font-sans text-left">
-      <header className="bg-linear-to-br from-[#4f46e5] to-[#7c3aed] text-white p-[60px_40px] flex flex-col md:flex-row items-center gap-10 rounded-none">
+      <header className="bg-linear-to-br from-[#4f46e5] to-[#7c3aed] text-white p-[60px_40px] flex flex-col md:flex-row items-center gap-10 border-0">
         <img src={imageUrl} alt={name} className="w-[180px] h-[180px] rounded-[30px] border-[6px] border-white/20 object-cover" />
         <div>
           <h1 className="text-[3.5rem] m-0 font-extrabold leading-tight">{name}</h1>
