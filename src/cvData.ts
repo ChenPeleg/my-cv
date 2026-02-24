@@ -3,7 +3,7 @@ export const cvData = {
   "name": "John Doe",
   "title": "Full Stack Developer",
   "greeting": "Hello there!",
-  "imageUrl": "https://via.placeholder.com/150",
+  "imageUrl": "/placeholder-avatar.svg",
   "text1": "I am a passionate developer with experience in building modern web applications.",
   "text2": "I specialize in React, Node.js, and cloud technologies.",
   "email": "john.doe@example.com",
@@ -31,9 +31,31 @@ export const cvData = {
       "role": "Software Developer",
       "period": "2018 - 2021",
       "description": "Developed and maintained various client websites and internal tools using modern JavaScript frameworks."
+    },
+    {
+      "company": "DataBridge Systems",
+      "role": "Junior Developer",
+      "period": "2016 - 2018",
+      "description": "Built data-driven dashboards and REST APIs for enterprise clients using Node.js and PostgreSQL."
+    },
+    {
+      "company": "Freelance",
+      "role": "Web Developer",
+      "period": "2014 - 2016",
+      "description": "Designed and developed responsive websites for small businesses, focusing on performance and user experience."
     }
   ],
   "education": [
+    {
+      "school": "Tel Aviv University",
+      "degree": "M.S. in Software Engineering",
+      "year": "2022"
+    },
+    {
+      "school": "Stanford Online",
+      "degree": "Machine Learning Specialization",
+      "year": "2020"
+    },
     {
       "school": "University of California, Berkeley",
       "degree": "B.S. in Computer Science",
