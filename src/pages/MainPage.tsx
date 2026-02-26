@@ -11,7 +11,7 @@ export const MainPage = () => {
   const { name, greeting, imageUrl, title, email, phone, skills, experience, education, summary, highlights } = useContext(GreetingContext);
 
   return (
-    <div className="max-w-6xl mx-auto my-5 bg-slate-50 font-sans text-left">
+    <div className="max-w-6xl mx-auto bg-slate-50 font-sans text-left">
       <Header name={name} title={title} imageUrl={imageUrl} />
 
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 p-8">
