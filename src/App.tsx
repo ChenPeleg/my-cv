@@ -1,22 +1,21 @@
- 
 import { AppRouter } from "./router/AppRouter";
 import { BrowserRouter } from "react-router";
 
- 
-
 export function App() {
- 
- 
-
   return (
     <div
+      style={{
+        backgroundImage: `url(${import.meta.env.BASE_URL}background.avif)`,
+      }}
       className={
-        "bg-[url('/background.avif')] bg-cover bg-center bg-no-repeat transition-all duration-300  h-screen w-screen text-black text-center"
+        "  bg-cover bg-center bg-no-repeat transition-all duration-300  h-screen w-screen  overflow-hidden"
       }
     >
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
-        <AppRouter />
-      </BrowserRouter>
+      <div className=" h-screen overflow-y-scroll  backdrop-blur-sm  ">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
+          <AppRouter />
+        </BrowserRouter>
+      </div>
     </div>
   );
 }
