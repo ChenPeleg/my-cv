@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CV Data",
+  "description": "Schema for CV data used in the CV application",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name of the person"
+    },
+    "title": {
+      "type": "string",
+      "description": "Job title or professional designation"
+    },
+    "greeting": {
+      "type": "string",
+      "description": "Short greeting message"
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "Path to the profile image"
+    },
+    "text1": {
+      "type": "string",
+      "description": "Primary introduction text"
+    },
+    "text2": {
+      "type": "string",
+      "description": "Secondary introduction text"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Contact email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    "address": {
+      "type": "string",
+      "description": "Physical address or location"
+    },
+    "skills": {
+      "type": "array",
+      "description": "List of technical skills",
+      "items": {
+        "type": "string"
+      }
+    },
+    "experience": {
+      "type": "array",
+      "description": "Work experience history",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string",
+            "description": "Name of the company"
+          },
+          "role": {
+            "type": "string",
+            "description": "Job role or title"
+          },
+          "period": {
+            "type": "string",
+            "description": "Time period of employment (e.g., '2021 - Present')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of responsibilities and achievements"
+          }
+        },
+        "required": [
+          "company",
+          "role",
+          "period",
+          "description"
+        ]
+      }
+    },
+    "education": {
+      "type": "array",
+      "description": "Educational background",
+      "items": {
+        "type": "object",
+        "properties": {
+          "school": {
+            "type": "string",
+            "description": "Name of the school or university"
+          },
+          "degree": {
+            "type": "string",
+            "description": "Degree or certification obtained"
+          },
+          "year": {
+            "type": "string",
+            "description": "Year of graduation or completion"
+          }
+        },
+        "required": [
+          "school",
+          "degree",
+          "year"
+        ]
+      }
+    }
+  },
+  "required": [
+    "name",
+    "title",
+    "skills",
+    "experience",
+    "education"
+  ]
+}
