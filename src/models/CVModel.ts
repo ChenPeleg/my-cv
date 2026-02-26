@@ -15,9 +15,10 @@ export interface CVRecord {
   name: string;
   title: string;
   greeting: string;
-  imageUrl: string;
+  imageUrl?: string;
   summary: string;
   highlights: string;
+
   email: string;
   phone: string;
   address: string;
