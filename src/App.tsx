@@ -11,7 +11,7 @@ export function App() {
   return (
     <div
       className={
-        "bg-amber-300 transition-all duration-300  h-screen w-screen text-black text-center"
+        "bg-[url('/background.avif')] bg-cover bg-center bg-no-repeat transition-all duration-300  h-screen w-screen text-black text-center"
       }
     >
       <BrowserRouter basename={import.meta.env.BASE_URL}>
