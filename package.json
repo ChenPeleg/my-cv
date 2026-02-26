@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "cv:yaml-to-js": "node scripts/yaml-to-js.js",
+    "cv:yaml": "node scripts/yaml-to-js.js",
     "dev": "npm run cv:yaml && vite",
     "build": "npm run cv:yaml && vite build",
     "main": "node ./scripts/main.js",

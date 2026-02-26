@@ -4,7 +4,9 @@ import path from "path";
 
 const yamlFilePath = path.resolve("cv.yaml");
 const jsFilePath = path.resolve("src/generated/cvData.ts");
-
+if (!fs.existsSync(path.dirname(jsFilePath))) {
+  fs.mkdirSync(path.dirname(jsFilePath), { recursive: true });
+}
 try {
   const fileContents = fs.readFileSync(yamlFilePath, "utf8");
   const data = yaml.load(fileContents);
