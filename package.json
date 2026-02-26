@@ -6,7 +6,7 @@
   "scripts": {
     "cv:yaml": "node scripts/yaml-to-js.js",
     "dev": "npm run cv:yaml && vite",
-    "build": "npm run cv:yaml && vite build",
+    "build": "vite build",
     "main": "node ./scripts/main.js",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
