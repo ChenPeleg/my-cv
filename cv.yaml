@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./schema/cv-schema.json
 name: "John Doe"
-title: "Full Stack Developer"
+title: "Front End Developer"
 greeting: "Hello there!"
 imageUrl: "/placeholder-avatar.svg"
 summary: "I am a passionate developer with experience in building modern web applications."

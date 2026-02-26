@@ -22,7 +22,7 @@ import { cvData } from '../../generated/cvData';
  * @property {string} name
  * @property {string} title
  * @property {string} greeting
- * @property {string} imageUrl
+ * @property {string} [imageUrl]
  * @property {string} summary
  * @property {string} highlights
  * @property {string} email
