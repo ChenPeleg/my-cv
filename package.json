@@ -4,16 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "cv:yaml": "node scripts/yaml-to-js.js",
+    "cv:yaml-to-js": "node scripts/yaml-to-js.js",
     "dev": "npm run cv:yaml && vite",
-    "compile-main-types": "tsc ./scripts/main-types.ts",
     "build": "npm run cv:yaml && vite build",
     "main": "node ./scripts/main.js",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",
-    "test": "vitest --run",
-    "runjs": "node lessons/examples/javascript-features.js"
+    "test": "vitest --run"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",

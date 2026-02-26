@@ -1,6 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import { createContext } from 'react';
-import { cvData } from '../cvData';
+import { cvData } from '../generated/cvData';
 
 /**
  * @typedef {Object} Experience
