@@ -23,8 +23,8 @@ import { cvData } from '../cvData';
  * @property {string} title
  * @property {string} greeting
  * @property {string} imageUrl
- * @property {string} text1
- * @property {string} text2
+ * @property {string} summary
+ * @property {string} highlights
  * @property {string} email
  * @property {string} phone
  * @property {string} address

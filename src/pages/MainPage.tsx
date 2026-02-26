@@ -8,7 +8,7 @@ import { ExperienceSection } from '../components/ExperienceSection';
 import { EducationSection } from '../components/EducationSection';
 
 export const MainPage = () => {
-  const { name, greeting, imageUrl, title, email, phone, skills, experience, education, text1, text2 } = useContext(GreetingContext);
+  const { name, greeting, imageUrl, title, email, phone, skills, experience, education, summary, highlights } = useContext(GreetingContext);
 
   return (
     <div className="max-w-6xl mx-auto my-5 bg-slate-50 font-sans text-left">
@@ -21,7 +21,7 @@ export const MainPage = () => {
         </aside>
 
         <main>
-          <AboutSection greeting={greeting} text1={text1} text2={text2} />
+          <AboutSection greeting={greeting} summary={summary} highlights={highlights} />
           <ExperienceSection experience={experience} />
           <EducationSection education={education} />
         </main>

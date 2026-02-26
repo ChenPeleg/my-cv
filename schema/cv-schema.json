@@ -20,11 +20,11 @@
       "type": "string",
       "description": "Path to the profile image"
     },
-    "text1": {
+    "summary": {
       "type": "string",
       "description": "Primary introduction text"
     },
-    "text2": {
+    "highlights": {
       "type": "string",
       "description": "Secondary introduction text"
     },
