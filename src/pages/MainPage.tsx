@@ -6,11 +6,11 @@ export const MainPage = () => {
 
   return (
     <div className="max-w-[1100px] mx-auto my-5 bg-[#f8fafc] font-sans text-left">
-      <header className="bg-linear-to-br from-[#4f46e5] to-[#7c3aed] text-white p-[60px_40px] flex flex-col md:flex-row items-center gap-10 border-0">
-        <img src={imageUrl} alt={name} className="w-[180px] h-[180px] rounded-[30px] border-[6px] border-white/20 object-cover" />
+      <header className="bg-linear-to-br from-[#4f46e5] to-[#7c3aed] text-white p-[30px_40px] flex flex-col md:flex-row items-center gap-6 border-0">
+        <img src={imageUrl} alt={name} className="w-[120px] h-[120px] rounded-[30px] border-[6px] border-white/20 object-cover" />
         <div>
-          <h1 className="text-[3.5rem] m-0 font-extrabold leading-tight">{name}</h1>
-          <p className="text-[1.5rem] opacity-90 mt-[10px] m-0">{title}</p>
+          <h1 className="text-[2.5rem] m-0 font-extrabold leading-tight">{name}</h1>
+          <p className="text-[1.1rem] opacity-90 mt-[10px] m-0">{title}</p>
         </div>
       </header>
 
