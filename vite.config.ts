@@ -5,6 +5,11 @@ import { exec } from "child_process";
 
 export default defineConfig({
   base: "",
+  test: {
+    environment: "jsdom",
+    globals: true,
+    setupFiles: ["./tests/setup.ts"],
+  },
   plugins: [
     react(),
     tailwindcss(),
