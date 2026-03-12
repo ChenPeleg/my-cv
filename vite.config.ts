@@ -5,7 +5,6 @@ import { exec } from "child_process";
 
 export default defineConfig({
   base: "",
-
   plugins: [
     react(),
     tailwindcss(),
