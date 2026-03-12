@@ -6,6 +6,11 @@ jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v4
+            - name: Run my custom action
+              uses: ./.github/actions/hello-world
+              with:
+                  who-to-greet: 'Copilot'
             - name: step1
               run: echo "This is step 1"
             - name: step2
